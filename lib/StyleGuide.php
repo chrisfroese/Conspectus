@@ -37,6 +37,10 @@ class StyleGuide {
 		return $this->config['style_sheets'];
 	}
 
+	function getFontStacks() {
+		return $this->config['font_stacks'];
+	}
+
 	// Display main navigation from config.
 	function getMainNavigation () {
 		$main_nav = array();

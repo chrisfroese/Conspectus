@@ -1,11 +1,11 @@
-<?php $markup_section = "base"; ?>
+
 <?php include('./template/head.php'); ?>
 <?php include('./template/nav.php'); ?>
 <div class="sg-body sg-container">
 	<div class="sg-info">
 		<div class="sg-about sg-section">
-			<h2 class="sg-h2"><a id="sg-about" class="sg-anchor">About</a></h2>
-			<p>Comments and documentation about your style guide.</p>
+			<h1 class="sg-h1"><?= $sg->getTitle() ?></h1>
+			<p>This is your style guide homepage. Put info here if needed.</p>
 		</div><!--/.sg-about-->
 
 		<div class="sg-colors sg-section">
@@ -16,19 +16,9 @@
 				<div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
 		</div><!--/.sg-colors-->
 
-		<div class="sg-font-stacks sg-section">
-			<h2 class="sg-h2"><a id="sg-fontStacks" class="sg-anchor">Font Stacks</a></h2>
-			<p class="sg-font sg-font-primary">"HelveticaNeue", "Helvetica", Arial, sans-serif;</p>
-			<p class="sg-font sg-font-secondary">Georgia, Times, "Times New Roman", serif;</p>
-			<div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
-		</div><!--/.sg-font-stacks-->
+		
 	</div><!--/.sg-info-->
-
-	<div class="sg-base-styles">
-		<h1 class="sg-h1">Base Styles</h1>
-		<?php $sg->getMarkupHtml($markup_section); ?>
-	</div><!--/.sg-base-styles-->
-
+	<!--/.sg-base-styles-->
 	</div><!--/.sg-body-->
 
 <?php include('./template/foot.php'); ?>
