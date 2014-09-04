@@ -1,0 +1,23 @@
+{
+  "title": "My Great Style Guide",
+  "author": "Your Name",
+  "author_email": "christopherfroese@gmail.com",
+  "author_url": "http://chrisfroese.net",
+  "version": "0.1",
+  "version_date": "2014-08-31",
+  "style_sheets": [
+    "http://localhost:8080/html/css/normalize.css",
+    "http://localhost:8080/html/css/grid.css",
+    "http://localhost:8080/html/css/responsive.css",
+    "http://localhost:8080/html/css/base.css"
+  ], 
+  "nav": {
+    "home": "index.php",
+    "typography": "type.php",
+    "images": "images.php",
+    "media": "media.php",
+    "forms": "forms.php",
+    "tables": "tables.php",
+    "components": "components.php"
+  }
+}
