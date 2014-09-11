@@ -1,0 +1,295 @@
+/* -------------------------------------------------------------------------
+
+____ ____ _  _ ____ ___  ____ ____ ___ _  _ ____
+|    |  | |\ | [__  |__] |___ |     |  |  | [__
+|___ |__| | \| ___] |    |___ |___  |  |__| ___]
+
+Conspectus
+Author: Chris Froese
+License: MIT
+GitHub: https://github.com/chrisfroese/Conspectus
+---------------------------------------------------------------------------- */
+
+*,:before,:after {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body {
+	margin:0;
+	color:#111;
+}
+
+/* ------------ Layout ------------ */
+
+.container { max-width: 960px; }
+
+.con-footer {
+	background-color: #333;
+	color: #f1f1f1;
+	padding: 1em 1em;
+}
+/*
+@media screen and (max-width: 650px) {
+	.sg-header {
+		text-align:center;
+	}
+}
+*/
+
+/* ------------ Navigation ------------ */
+.con-main-nav {
+	background-color: #333;
+	padding: 0 1em;
+}
+
+.con-main-nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.con-main-nav li {
+	float: left;
+}
+
+.con-main-nav li a.con-logo {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: .4em .75em .4em 0;
+	letter-spacing: 1px;
+}
+
+.con-main-nav li a.con-logo:hover {
+	background-color: transparent;
+}
+
+.con-main-nav li a {
+	color: #f1f1f1;
+	display: inline-block;
+	padding: .5em .75em;
+	text-decoration: none;
+}
+
+.con-main-nav li a:hover {
+	background-color: #111;
+	color: #fff;
+}
+
+.con-page-nav {
+	list-style-type: none;
+}
+
+.con-page-nav li {
+	padding-left: 1.4em;
+}
+
+.con-page-nav li:hover {
+	border-left: 1px #999 solid;
+}
+
+.con-page-nav li a {
+	color: #999;
+	font-size: .8em;
+	padding-top: 1.4em;
+	padding-bottom: 1.4em;
+	text-decoration: none;
+}
+.con-page-nav li a:hover {
+	color: #999;
+	margin-left: -1px;
+}
+
+@media screen and (max-width: 650px) {
+
+}
+
+/* ------------ Branding ------------ */
+.con-mega {
+	font-size: 6em;
+	margin: .5em 0 .25em 0;
+	text-align: center;
+}
+
+.con-meta {
+	text-align: center;
+}
+
+.con-meta a {
+	color: #111;
+}
+
+/* ------------ Utility Classes ------------ */
+/* Clearfix */
+.cF:before,
+.cF:after
+{
+	content: " ";
+	display: table;
+}
+.cF:after { clear: both; }
+.cF { *zoom: 1; }
+
+.quite {
+	color: #999;
+}
+
+/*
+.sg-animated {
+	-webkit-transition:all .6s ease-out;
+	-moz-transition:all .6s ease-out;
+	-ms-transition:all .6s ease-out;
+	-o-transition:all .6s ease-out;
+	transition:all .6s ease-out;
+}
+*/
+
+@media screen and (max-width: 650px) {}
+
+
+/* ------------ Buttons ------------ */
+.con-btn {
+
+}
+
+/* ------------ Sections ------------ */
+section.con-section {
+	margin-bottom:1rem;
+	overflow:hidden;
+}
+
+section.con-section a[id] {
+	color: #111;
+	text-decoration: none;
+}
+
+section.con-section a[id]:hover {
+	color: #111;
+	text-decoration: none;
+}
+
+/* colors */
+.con-color { padding: 1em; }
+
+/* ------------ Prettyprint ------------ */
+.con-markup {
+	border: 1px solid #efefef;
+	border-radius: 6px;
+	font-size: .8em;
+}
+.con-markup code {
+	white-space: pre-wrap;
+}
+.pln {
+	color:#333;
+}
+
+/* plain text */
+@media screen {
+	.str,.string {
+		color:#E6DB74;
+	}
+
+	/* string content */
+	.kwd,.keyword {
+		color:#66D9EF;
+	}
+
+	/* a keyword */
+	.com,.comment {
+		color:#75715E;
+	}
+
+	/* a comment */
+	.typ {
+		color:#A6E22E;
+	}
+
+	/* a type name */
+	.lit,.number {
+		color:#AE81FF;
+	}
+
+	/* a literal value */
+	/* punctuation, lisp open bracket, lisp close bracket */
+	/* .pun, .opn, .clo { color: #660 } */
+	.tag {
+		color:#F92672;
+	}
+
+	/* a markup tag name */
+	.atn {
+		color:#A6E22E;
+	}
+
+	/* a markup attribute name */
+	.atv {
+		color:#E6DB74;
+	}
+
+	/* a markup attribute value */
+	/*.dec, .var { color: #606 }*/
+	/* a declaration; a variable name */
+	.fun {
+		color:red;
+	}/* a function name */
+
+}
+
+/* Use higher contrast and text-weight for printable form. */
+@media print,projection {
+	.str {
+		color:#060;
+	}
+
+	.kwd {
+		color:#006;
+		font-weight:700;
+	}
+
+	.com {
+		color:#600;
+		font-style:italic;
+	}
+
+	.typ {
+		color:#404;
+		font-weight:700;
+	}
+
+	.lit {
+		color:#044;
+	}
+
+	.pun,.opn,.clo {
+		color:#440;
+	}
+
+	.tag {
+		color:#006;
+		font-weight:700;
+	}
+
+	.atn {
+		color:#404;
+	}
+
+	.atv {
+		color:#060;
+	}
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+	border-left:1px solid #efefef;
+	margin:0 0 0 3.3em;
+/* IE indents via margin-left */
+	padding:0;
+}
+
+ol.linenums li {
+	color:#999;
+	line-height:1.4;
+	padding-left:.8em;
+}

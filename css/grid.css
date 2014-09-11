@@ -1,0 +1,216 @@
+/********************************
+---------------------------------
+Barebones grid
+---------------------------------
+********************************/
+
+/*
+Base grid
+*/
+.container
+{
+  margin: 0 auto;
+}
+
+/*********************************
+   ROWS
+*********************************/
+
+/* Clearfix */
+.row:before,
+.row:after
+{
+  content: " ";
+  display: table;
+}
+
+.row:after { clear: both; }
+.row { *zoom: 1; }
+
+/*********************************
+   COLUMNS
+
+   NOTE: Add .last to last row
+   for IE8 compatibility.
+*********************************/
+
+/* Using attribute selectors */
+[class^='col-']
+{
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+[class^='col-']:last-of-type, [class^='col-'].last
+{
+  float: right;
+}
+
+/* Columns */
+/* 1/4, 1/2, 3/4 */
+.col-25 {
+  width: 25%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+/* 1/3, 2/3 */
+.col-33 {
+  width: 33.33%;
+}
+
+.col-66
+{
+  width: 66.66%
+}
+
+/* 1/1 */
+.col-100 {
+  width: 100%;
+}
+
+/*********************************
+   NESTED
+   WARNING! Not fully tested
+   Add .first, .last to columns
+   for IE8 support.
+*********************************/
+
+[class^='col-'] > .row > [class^='col-']:first-of-type,
+[class^='col-'] > .row > [class^='col-'].first
+{
+  padding-left: 0;
+}
+
+[class^='col-'] > .row > [class^='col-']:last-of-type,
+[class^='col-'] > .row > [class^='col-'].last,
+{
+  padding-right: 0;;
+}
+
+
+/*********************************
+   Responsive
+*********************************/
+
+/* SMALL */
+@media screen and (min-width: 320px) {
+  /* Columns */
+  [class^='col-']
+  {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+  /* styles */
+}
+
+/* MEDIUM */
+@media screen and (min-width: 640px) {
+  /* styles */
+}
+
+@media screen and (min-width: 760px) {
+  /* styles */
+}
+
+/* LARGE */
+@media screen and (min-width: 960px) {
+  /* Columns */
+  /* 1/4, 1/2, 3/4 */
+  .col-25 {
+    width: 25%;
+  }
+
+  .col-50 {
+    width: 50%;
+  }
+
+  .col-75 {
+    width: 75%;
+  }
+
+  /* 1/3, 2/3 */
+  .col-33 {
+    width: 33.33%;
+  }
+
+  .col-66
+  {
+    width: 66.66%
+  }
+
+  /* 1/1 */
+  .col-100 {
+    width: 100%;
+  }
+}
+
+/* EXTRA LARGE */
+@media screen and (min-width: 1120px) {
+  /* styles */
+}
+
+
+/*************** OR ***************/
+
+/*
+EM media queries based on 16px (1em)
+font size.
+
+See:
+http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
+http://www.smashingmagazine.com/2013/03/01/logical-breakpoints-responsive-design/
+
+Calculation:
+target px / inherit px = em
+
+Example:
+320px / 16px = 20em
+
+See:
+http://webdesign.tutsplus.com/articles/taking-the-erm-out-of-ems--webdesign-12321
+*/
+
+/* SMALL */
+/* 320px */
+@media screen and (min-width: 20em) {
+  /* styles */
+}
+
+/* 480px */
+@media screen and (min-width: 30em) {
+  /* styles */
+}
+
+/* MEDIUM */
+/* 640px */
+@media screen and (min-width: 40em) {
+  /* styles */
+}
+
+/* 760px */
+@media screen and (min-width: 47.5em) {
+  /* styles */
+}
+
+/* LARGE */
+/* 960px */
+@media screen and (min-width: 60em) {
+  /* styles */
+}
+
+/* EXTRA LARGE */
+/* 1120px */
+@media screen and (min-width: 70em) {
+  /* styles */
+}
