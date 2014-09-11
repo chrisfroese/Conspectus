@@ -1,9 +1,20 @@
+1.1.1 / 2014-09-11
+==================
+* Removed most styles. Generated style guide carries styles.
+* Added Branding page.
+* Removed old PHP functions. Use Conspectus class.
+* Removed most JS.
+* Added side navigation.
+* Added templates.
+* Added colors to config.
+* Added index page with author and version info.
+
 1.1 / 2014-09-04
 ==================
 * Renaming Conspectus.
 * Updated license
 * Added font stacks to config.
-* Begin rewriting README.md 
+* Begin rewriting README.md
 
 1.0 / 2014-09-01
 ==================

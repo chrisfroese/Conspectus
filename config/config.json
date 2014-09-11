@@ -1,22 +1,26 @@
 {
-  "title": "My Great Style Guide",
-  "author": "Your Name",
+  "title": "Conspectus",
+  "author": "Chris Froese",
   "author_email": "christopherfroese@gmail.com",
   "author_url": "http://chrisfroese.net",
   "version": "0.1",
   "version_date": "2014-08-31",
   "style_sheets": [
-    "http://localhost:8080/html/css/normalize.css",
-    "http://localhost:8080/html/css/grid.css",
-    "http://localhost:8080/html/css/responsive.css",
-    "http://localhost:8080/html/css/base.css"
+    "/html/css/normalize.css",
+    "/html/css/base.css",
+    "/html/css/components.css"
   ],
+  "colors": {
+    "primary": "#8f99cc",
+    "secondary": "#cc9a8f",
+    "tertiary": "#c7cc8f"
+  },
   "font_stacks": {
     "headings": "Georgia, Times, 'Times New Roman', serif;",
     "body": "'HelveticaNeue', 'Helvetica', Arial, sans-serif;"
   },
   "nav": {
-    "home": "index.php",
+    "branding": "branding.php",
     "typography": "type.php",
     "images": "images.php",
     "media": "media.php",
